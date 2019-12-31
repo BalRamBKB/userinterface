@@ -1,0 +1,24 @@
+<!-- <p>search-data works!</p> -->
+<div>
+    <!-- <ng-content></ng-content> -->
+    <div class="products">
+        <div class="product" *ngFor="let product of products">
+            <!-- <h2>{{product.id}}</h2> -->
+            <!-- <h1>{{#serverNameInput}}</h1> -->
+            <figure>
+                <img src="https://i.morioh.com/2019/11/18/d60cd22ee4af.jpg" alt="product.img_url">
+                <figcaption class="caption">
+                    <span class="products-name">{{product.title}}</span>
+                    <p>
+                        <span class="discount-price">{{product.price}}</span>
+                        <span class="actual-price"><del>900</del></span>
+                        <span class="discount">{{product.discount}}% off</span>
+                    </p>
+                    <div class="txt-center">
+                        <a href="#" class="add-cart">Add to Cart</a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="product" (click)="onSelected()">
+    <figure>
+        <img class="img" [src]="productItem.url" alt="{{productItem.title}}"  loading=“lazy”>
+        <figcaption>
+            <!-- <p>{{productItem.albumId}}</p> -->
+            <p>{{productItem.id}}</p>
+            <p class="title">{{productItem.title}}</p>
+        </figcaption>
+    </figure>
+</div>

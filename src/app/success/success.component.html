@@ -1,0 +1,16 @@
+<p>{{'Message'}} {{msg}}</p>
+
+<!-- <button (click)="showDetails =  !showDetails">Display Details</button> -->
+<button (click)="onToggleDetails()">Display Details</button>
+<!-- <p *ngIf="showDetails">Secret Password = Tuna</p> -->
+
+<div 
+    *ngFor="let logItem of logs; let ind = index"
+    [ngStyle]="{backgroundColor: ind >= 4 ? 'orange' : 'transparent'}"
+    [ngClass]="{'white-txt' :  ind >= 4 }">{{logItem}}</div>
+
+<hr>
+<p>para</p>
+<h3>
+    <div *ngFor="let myLog of myLogs">{{myLog}}</div>
+</h3>

@@ -1,0 +1,93 @@
+.header {
+    background: #4CAF50;
+    box-shadow: 0 0 4px 4px rgba(0,0,0,.5);
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-gap: 10px;
+    padding: 15px 10px;
+    width: 100%;
+    position: fixed;
+    height: 60px;
+    z-index: 9;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    justify-self: end;
+}
+
+.nav li  {
+    display: inline-block;
+}
+
+.nav li a {
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0px 20px;
+    padding: 5px 10px;
+}
+
+.nav li a:hover {
+    background: #009688;
+}
+
+.hamburger,
+.nav .closebtn { 
+    display: none;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+
+.hamburger {
+    color: #fff;
+    cursor:pointer;
+    display: block;
+    font-size:20px;
+    justify-self: end;
+}
+
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: #009688;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .nav li {
+      display: block;
+  }
+  .nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .nav .closebtn {
+    color: #fff;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+}

@@ -1,0 +1,13 @@
+<section class="section">
+    <div>
+        <app-product-listing (productWasSelected)="selectedProduct = $event"></app-product-listing>
+    </div>
+    <div class="pdp-box">
+        <app-product-description 
+        *ngIf="selectedProduct; else infoText"
+        [productPDP]="selectedProduct"></app-product-description>
+        <ng-template #infoText>
+            <p>Please select a  product</p>
+        </ng-template>
+    </div>
+</section>

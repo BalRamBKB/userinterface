@@ -1,0 +1,35 @@
+<app-header (menuSelected)="onNavigation($event)"></app-header>
+<!-- <app-header></app-header> -->
+<main class="main">
+
+    <!-- <app-home *ngIf="menuValue === 'home'"></app-home>    
+    <app-product *ngIf="menuValue !== 'home'"></app-product> -->
+    <router-outlet></router-outlet>
+    <!-- <app-cockpit 
+        (serverCreated)="onServerAdded($event)"
+        (blueprintCreated)="onBlueprintAdded($event)"></app-cockpit> -->
+
+
+    <!-- <app-server-element 
+            *ngFor="let serverElemet of serverElemets"
+            [skyElement]="serverElemet"></app-server-element> -->
+
+    <!-- <app-search-bar (searchCreated)="onServerAdded($event)"></app-search-bar> -->
+
+    <!-- <app-search-data *ngFor="let serverElemet of serverElemets" [element]="serverElemet">
+        <div class="product">
+            <h1 class="myclass">{{serverElemet.name}}</h1>
+        </div>
+    </app-search-data> -->
+
+    <!-- <div>
+        <app-game-control (intervalFired)="onFiredIntervale($event)"></app-game-control>
+    </div>
+    <div>
+        <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
+        <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
+        <app-odd></app-odd>
+    </div> -->
+
+</main>
+<app-footer></app-footer>

@@ -1,0 +1,6 @@
+<div>
+    <section class="products">
+        <app-product-item *ngFor="let productBB of products| slice:0 : 20" [productItem]="productBB"
+            (productSelected)="onproductSelected(productBB)"></app-product-item>
+    </section>
+</div>

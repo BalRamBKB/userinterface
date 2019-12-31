@@ -1,0 +1,26 @@
+.section {
+	display: grid;
+	grid-template-columns: 70% auto;
+	grid-gap: 25px 20px;
+	padding: 10px;
+}
+
+.pdp-box {
+	background: #ddd;
+	position: fixed;
+	right: 5px;
+	width: 30%;
+}
+
+@media screen and (min-width:320px) and (max-width:767px) {
+    
+	.section {
+		grid-template-columns: 100% auto;
+	}
+	.pdp-box {
+		position: fixed;
+		right: 5px;
+		width: 80%;
+		bottom: 0;
+	}
+}

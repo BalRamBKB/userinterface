@@ -1,0 +1,25 @@
+<header class="header">
+    <!-- <a href="#" class="logo"> WebAPP</a> -->
+    <a class="logo" routerLink="/">Ghar Ka Khana</a>
+    
+    <nav id="mynav" class="nav">
+        <ul>
+           <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+            <li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Home</a></li>
+            <li><a routerLinkActive="active" routerLink="/product-list">Food</a></li>
+            <li><a href="#">Services</a></li>
+            <li> <a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <span class="hamburger" (click)="openNav()">&#9776;</span>
+    <!-- <nav id="mynav" class="nav">
+            <ul>
+               <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+                <li><a (click)="onSelect('home')">Home</a></li>
+                <li><a (click)="onSelect('food')">Food</a></li>
+                <li><a href="#">Services</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+    </nav>
+    <span class="hamburger" (click)="openNav()">&#9776;</span> -->
+</header>

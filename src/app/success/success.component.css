@@ -1,0 +1,10 @@
+p {
+    border: 1px solid yellowgreen;
+    background:palegreen;
+    color: green;
+    padding: 10px;
+}
+
+.white-txt {
+    color: #fff;
+}

@@ -1,0 +1,21 @@
+<div>
+    <h1>This is {{title}}</h1>
+    <!-- Tag selector Down -->
+    <app-servers></app-servers>
+    <!-- <div app-servers></div>  -->
+    <!-- attribute selector UP -->
+    <!-- class selector Down -->
+    <!-- <div class="app-servers"></div> -->
+    <app-success></app-success>
+    <app-warning></app-warning>
+    <app-cockpit 
+        (serverCreated)="onServerAdded($event)"
+        (blueprintCreated)="onBlueprintAdded($event)"></app-cockpit>
+    <!-- <app-server-element 
+        *ngFor="let serverElemet of serverElemets"
+        [element]="serverElemet"></app-server-element> -->
+
+        <app-server-element 
+        *ngFor="let serverElemet of serverElemets"
+        [skyElement]="serverElemet"></app-server-element>
+</div>

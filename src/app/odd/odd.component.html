@@ -1,0 +1,24 @@
+<p>Odd number! {{number}}</p>
+
+<button type="button" (click)="onlyOdd = !onlyOdd">Show Only Odd Number</button>
+<ul>
+    <div *ngIf="onlyOdd">
+        <li 
+        *ngFor="let oddNum of oddNumbers" 
+        [ngClass]="{odd: oddNum % 2 != 0}"
+        [ngStyle]="{backgroundColor: oddNum % 2 != 0 ? 'pink' : 'transparent' }">
+            {{oddNum}}
+        </li>
+    </div>
+    <div *ngIf="!onlyOdd">
+        <li 
+        *ngFor="let evenNum of evenNumbers" 
+        [ngClass]="{even: evenNum % 2 == 0}"
+        [ngStyle]="{backgroundColor:evenNum % 2 == 0 ? 'silver' : 'transparent' }">
+            {{evenNum}}
+        </li>
+    </div>
+    
+
+
+</ul>

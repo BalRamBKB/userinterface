@@ -1,0 +1,50 @@
+.pdp {
+    box-shadow: 0 0 4px 4px rgba(0,0,0,.5);
+}
+
+.pdp figcaption {
+    padding: 10px;
+}
+
+.pdp img {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.8s;
+}
+
+.title {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.btn-group {
+    display: grid;
+    grid-gap: 20px 15px;
+    grid-template-columns: 48% 48% ;
+    margin: 10px 0 ;
+}
+
+.btn {
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn:hover {
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.4);
+    filter: brightness(90%);
+    /* opacity: 0.8; */
+  }
+
+.btn-primary {
+    background: #4CAF50;
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #009688;
+    color: #fff;
+}

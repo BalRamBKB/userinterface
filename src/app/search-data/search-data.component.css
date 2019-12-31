@@ -1,0 +1,38 @@
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-gap: 15px 20px;
+}
+
+.product {
+    background: #fff;
+    -webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.product .caption {
+    background: #fff;
+    display: grid;
+    grid-row-gap: 8px;
+    padding: 10px;
+    transition: 0.3s;
+    z-index: 0;
+}
+
+/* .product:hover .caption {
+    transform: translate(0, -10px);
+} */
+
+.discount-price {
+    font-weight: bold;
+}
+
+.actual-price {
+    color: silver;
+    padding: 0 10px;
+}
+
+.discount {
+    color: green;
+}
