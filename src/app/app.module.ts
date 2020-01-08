@@ -29,6 +29,9 @@ import { ProductItemComponent } from './product/product-listing/product-item/pro
 import { ProductDescriptionComponent } from './product/product-description/product-description.component';
 import { ProductListingComponent } from './product/product-listing/product-listing.component';
 import { ProductComponent } from './product/product.component';
+import { ColorPalattesComponent } from './color-palattes/color-palattes.component';
+import { ColorItemComponent } from './product/color-listing/color-item/color-item.component';
+import { ColorListingComponent } from './product/color-listing/color-listing.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,11 @@ import { ProductComponent } from './product/product.component';
     ProductItemComponent,
     ProductDescriptionComponent,
     ProductListingComponent,
-    ProductComponent
+    ProductComponent,
+    ColorPalattesComponent,
+    ColorItemComponent,
+    ColorListingComponent
+
 
   ],
   imports: [

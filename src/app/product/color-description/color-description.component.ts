@@ -2,15 +2,14 @@ import { Component, OnInit, Input, HostListener } from '@angular/core';
 import { Model } from '../../shared/model';
 
 @Component({
-  selector: 'app-product-description',
+  selector: 'app-color-description',
   templateUrl: './product-description.component.html',
   styleUrls: ['./product-description.component.css']
 })
-export class ProductDescriptionComponent implements OnInit {
+export class ColorDescriptionComponent implements OnInit {
 
   constructor() { }
 
-  @Input() productPDP : Model;
   @Input() colorPDP : string;
 
   ngOnInit() {

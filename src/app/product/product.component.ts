@@ -9,6 +9,7 @@ import { Model } from '../shared/model';
 export class ProductComponent implements OnInit {
 
   selectedProduct : Model;
+  selectedColor : string
   constructor() { }
 
   ngOnInit() {
