@@ -1,20 +1,11 @@
 <section class="section">
     <div>
         <app-product-listing (productWasSelected)="selectedProduct = $event"></app-product-listing>
-        <app-color-listing (colorWasSelected)="selectedColor = $event"></app-color-listing>
     </div>
     <div class="pdp-box">
         <app-product-description 
-        *ngIf="selectedProduct; else infoText"
+        *ngIf="selectedProduct"
         [productPDP]="selectedProduct"></app-product-description>
-
-       <ng-template>
-        <app-product-description #infoText
-        [colorPDP]="selectedColor"></app-product-description>
-       </ng-template>
     </div>
 
-    <div>
-        <app-color-listing></app-color-listing>
-    </div>
 </section>

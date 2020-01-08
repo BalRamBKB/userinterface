@@ -30,8 +30,6 @@ import { ProductDescriptionComponent } from './product/product-description/produ
 import { ProductListingComponent } from './product/product-listing/product-listing.component';
 import { ProductComponent } from './product/product.component';
 import { ColorPalattesComponent } from './color-palattes/color-palattes.component';
-import { ColorItemComponent } from './product/color-listing/color-item/color-item.component';
-import { ColorListingComponent } from './product/color-listing/color-listing.component';
 
 @NgModule({
   declarations: [
@@ -55,9 +53,7 @@ import { ColorListingComponent } from './product/color-listing/color-listing.com
     ProductDescriptionComponent,
     ProductListingComponent,
     ProductComponent,
-    ColorPalattesComponent,
-    ColorItemComponent,
-    ColorListingComponent
+    ColorPalattesComponent
 
 
   ],
