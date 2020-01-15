@@ -36,3 +36,24 @@
 .discount {
     color: green;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table th,
+table td { 
+    padding: 10px;
+    text-align: left;
+}
+
+table tr {
+    border: 1px solid #ccc;
+}
+
+table th {
+    background: darkgray;
+}
+table td {
+    background:skyblue;
+}

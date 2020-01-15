@@ -8,9 +8,8 @@ export interface Model {
     // // title:   string;
 
 
-    id : number;
+    id : any;
     albumId : number;
     title : string;
     url :string;
   }
-  

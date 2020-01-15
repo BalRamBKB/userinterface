@@ -1,0 +1,80 @@
+<!-- <p>search-data works!</p> -->
+<div>
+    <app-search-bar  (changed)="filter($event)"></app-search-bar>
+    <!-- <div class="products">
+        <div class="product" *ngFor="let product of products">
+            <figure>
+                <img src="https://i.morioh.com/2019/11/18/d60cd22ee4af.jpg" alt="product.img_url">
+                <figcaption class="caption">
+                    <h2>{{product.id}}</h2>
+                    <span class="products-name">{{product.title}}</span>
+                    <p>
+                        <span class="discount-price">{{product.price}}</span>
+                        <span class="actual-price"><del>900</del></span>
+                        <span class="discount">{{product.discount}}% off</span>
+                    </p>
+                    <div class="txt-center">
+                        <a href="#" class="add-cart">Add to Cart</a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </div> -->
+    <table>
+        <tr>
+            <th (click)="sort('Id')">ID</th>
+            <th (click)="sort('name')">Name</th>
+            <th (click)="sort('price')">Price</th>
+            <th (click)="sort('discount')">Discount</th>
+            <th (click)="sort('category')">Category</th>
+            <th (click)="sort('image')">Image</th>
+            <!-- <th>Price</th>
+            <th>Discount</th> -->
+        </tr>
+        <tr *ngFor="let product of filteredProducts">
+            <td>{{product.id}}</td> 
+            <td>{{product.name | capitalize}}</td> 
+             <!-- <td>{{product.title | titlecase}}</td> -->
+            <!-- <td>{{product.title | uppercase}}</td> -->
+            <td>{{product.price }}</td>
+            <td>{{product.discount}}</td>
+            <td>{{product.category}}</td>
+            <td><img [src]="product.img_url" alt="{{product.img_url}}" [ngStyle]="{'height': '50px'}"></td>
+            <!-- <td>{{product.id  |  currency:currencyCode:'code'}}</td> -->
+             <!-- <td>{{product.id | currency}}</td> -->
+            <!-- <td>{{product.price}}</td>
+            <td>{{product.discount}}% off</td> -->
+        </tr>
+        <tr>
+            <td colspan="6">Number of Products: <b>{{filteredProducts.length}}</b></td>
+        </tr>
+        <tr *ngIf="!filteredProducts || !filteredProducts.length">
+            <td colspan="6">No Product Found</td>
+        </tr>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>User Name</th>
+                <th>Email</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of filteredProducts">
+                <td>{{product.id}}</td> 
+                <td>{{product.name | capitalize}}</td> 
+                <td>{{product.username}}</td> 
+                <td>{{product.email}}</td> 
+                <td><address>
+                    {{product.address.street}},
+                    {{product.address.suite}},
+                    {{product.address.city}}-
+                    {{product.address.zipcode}}
+                </address></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

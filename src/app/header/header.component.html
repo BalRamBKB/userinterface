@@ -1,13 +1,14 @@
 <header class="header">
     <!-- <a href="#" class="logo"> WebAPP</a> -->
-    <a class="logo" routerLink="/">Ghar Ka Khana</a>
+    <a class="logo" routerLink="/">UI</a>
     
     <nav id="mynav" class="nav">
         <ul>
            <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
             <li><a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Home</a></li>
             <li><a routerLinkActive="active" routerLink="/product-list">Food</a></li>
-            <li><a >Color</a></li>
+            <li><a routerLink="/landing-page">Landing Page</a></li>
+            <li><a routerLink="/search">Search</a></li>
             <li> <a href="#">Contact</a></li>
         </ul>
     </nav>

@@ -13,12 +13,13 @@ import { WarningComponent} from './warning/warning.component';
 
 import { ServerElementComponent } from './server-element/server-element.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
-import { SearchDataComponent } from './search-data/search-data.component';
-import { SearchBarComponent } from './search-bar/search-bar.component';
+import { SearchDataComponent } from './search/search-data/search-data.component';
+import { SearchBarComponent } from './search/search-bar/search-bar.component';
 
 import { FilterPipe } from './shared/filter.pipe';
 
 import { ApiService } from './shared/api.service';
+
 import { GameControlComponent } from './game-control/game-control.component';
 import { OddComponent } from './odd/odd.component';
 import { EvenComponent } from './even/even.component';
@@ -30,6 +31,11 @@ import { ProductDescriptionComponent } from './product/product-description/produ
 import { ProductListingComponent } from './product/product-listing/product-listing.component';
 import { ProductComponent } from './product/product.component';
 import { ColorPalattesComponent } from './color-palattes/color-palattes.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FilterTextboxComponent } from './product/filter-textbox/filter-textbox.component';
+import { SharedModule } from './shared/shared.module';
+import { SearchComponent } from './search/search.component';
+import { Api2Service } from './shared/api2.service';
 
 @NgModule({
   declarations: [
@@ -53,7 +59,10 @@ import { ColorPalattesComponent } from './color-palattes/color-palattes.componen
     ProductDescriptionComponent,
     ProductListingComponent,
     ProductComponent,
-    ColorPalattesComponent
+    ColorPalattesComponent,
+    LandingPageComponent,
+    FilterTextboxComponent,
+    SearchComponent
 
 
   ],
@@ -61,9 +70,10 @@ import { ColorPalattesComponent } from './color-palattes/color-palattes.componen
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    SharedModule,
+    HttpClientModule,
   ],
-  providers: [ApiService],
+  providers: [ApiService, Api2Service],
   bootstrap: [
     AppComponent
   ]

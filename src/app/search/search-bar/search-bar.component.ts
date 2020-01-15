@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, ViewChild, ElementRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-search-bar',
@@ -10,6 +10,20 @@ export class SearchBarComponent implements OnInit {
  @Output() searchCreated = new EventEmitter<{serverName: string }>();
 
   searchValue = '';
+
+  @Output() changed = new EventEmitter<string>();
+
+  private  _filter: string;
+  @Input() get filter() {
+    return this._filter;
+  }
+
+  set filter(val:string) {
+    this._filter = val;
+    this.changed.emit(this.filter); // raise changed event
+  }
+
+
 
   // @ViewChild('serverNameInput') serverNameInput : ElementRef;
 

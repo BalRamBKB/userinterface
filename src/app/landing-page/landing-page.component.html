@@ -1,0 +1,28 @@
+<section class="bg">
+    <div class="content">
+       <div class="left-col">
+           <div class="left">
+               <h2 class="title">Thiss is your UI App with UI Dashboard</h2>
+           </div>
+       </div>
+       <div class="right-col">
+           <div class="right">
+               <img src="/assets/phone3.png" alt="phone">
+           </div>
+       </div>
+    </div>
+</section>
+<div  class="content2">
+    <!-- <div 
+    class="svg" *ngFor="let data of dataSet" 
+    [ngStyle]="{'height': data + 'px', 'marginRight': '15px'}">
+        <p >{{data}}</p>
+        {{data}}
+    </div> -->
+    <!-- <div #myDiv>helloo</div> -->
+    <div class="svg" *ngFor="let data of dataSet" 
+    [ngStyle]="{'height': data + 'px'}">
+        <!-- <p >{{data}}</p> -->
+        <p>{{data}}</p>
+    </div>
+</div>
